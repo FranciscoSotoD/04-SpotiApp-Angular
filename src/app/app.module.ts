@@ -11,13 +11,14 @@ import { ArtistaComponent } from './components/artista/artista.component';
 import { NavbarComponent } from './components/shared/navbar/navbar.component';
 import { PaisesComponent } from './components/paises/paises.component';
 import { TarjetasComponent } from './components/tarjetas/tarjetas.component';
+import { LoadingComponent } from './components/shared/loading/loading.component';
 
 // Importar rutas 
 import { ROUTES } from './app.routes';  // Importación desde imports -> forRoot (ROUTES)
 
 // Pipes
 import { NoimagePipe } from './pipes/noimage.pipe';
-import { LoadingComponent } from './components/shared/loading/loading.component';
+import { DomseguroPipe } from './pipes/domseguro.pipe';
 
 // Services
 // import { SpotifyService } from './services/spotify.service';
@@ -32,7 +33,8 @@ import { LoadingComponent } from './components/shared/loading/loading.component'
     PaisesComponent,
     NoimagePipe,
     TarjetasComponent,
-    LoadingComponent
+    LoadingComponent,
+    DomseguroPipe
   ],
   imports: [
     BrowserModule,

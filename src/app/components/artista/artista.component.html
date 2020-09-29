@@ -42,7 +42,8 @@
                     <td> {{ i.album.name }}</td>
                     <td> {{ i.name }}</td>
                     <td>
-                        <audio [src]="i.preview_url" controls></audio>
+                        <!-- <audio [src]="i.preview_url" controls></audio> -->
+                        <iframe [src]="i.uri | domseguro" width="300" height="80" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
                     </td>
                 </tr>
             </tbody>
